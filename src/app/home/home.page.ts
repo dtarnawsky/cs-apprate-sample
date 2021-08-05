@@ -12,6 +12,7 @@ export class HomePage {
 
   public rate(): void {
     // or, override the whole preferences object
+    
     this.appRate.preferences = {
       usesUntilPrompt: 3,
       storeAppURL: {
