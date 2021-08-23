@@ -12,15 +12,14 @@ export class HomePage {
 
   public rate(): void {
     // or, override the whole preferences object
-    
-    this.appRate.preferences = {
+    this.appRate.setPreferences({
       usesUntilPrompt: 3,
       storeAppURL: {
         ios: '<app_id>',
         android: 'market://details?id=<package_name>',
         windows: 'ms-windows-store://review/?ProductId=<store_id>'
       }
-    }
+    });
 
     this.appRate.promptForRating(true);
   }
